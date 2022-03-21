@@ -394,8 +394,17 @@ public class ClassUtil {
 
   public static Field[] getAllFields(Class<?> cls) {
     List<Field> result = new ArrayList<Field>();
-    for(; cls != Object.class && cls != null; cls = cls.getSuperclass())  // Interface superclass is null
-      result.addAll(0, Arrays.asList(cls.getDeclaredFields()));
+    // for(; cls != Object.class && cls != null; cls = cls.getSuperclass())  // Interface superclass is null
+    //   result.addAll(0, Arrays.asList(cls.getDeclaredFields()));
+    for(; cls != Object.class && cls != null; cls = cls.getSuperclass()){  // 				Interface superclass is null
+      Field[] sortedFields = cls.getDeclaredFields();
+      Arrays.sort(sortedFields, new Comparator<Field>(){
+        public int compare (Field a , Field b) {
+          return a.getName().compareTo(b.getName());
+        } 
+      });
+      result.addAll(0, Arrays.asList(sortedFields));
+    }
     return result.toArray(new Field[0]);
   }
 

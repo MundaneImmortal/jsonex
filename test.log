@@ -1,0 +1,329 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jsonex:core:jar:0.1.21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ org.jsonex:jcParent:0.1.21, /Users/jiazhen/Documents/junior/CS397/jsonex/pom.xml, line 112, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jsonex:treedoc:jar:0.1.21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ org.jsonex:jcParent:0.1.21, /Users/jiazhen/Documents/junior/CS397/jsonex/pom.xml, line 112, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jsonex:JSONCoder:jar:0.1.21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ org.jsonex:jcParent:0.1.21, /Users/jiazhen/Documents/junior/CS397/jsonex/pom.xml, line 112, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jsonex:csv:jar:0.1.21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ org.jsonex:jcParent:0.1.21, /Users/jiazhen/Documents/junior/CS397/jsonex/pom.xml, line 112, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jsonex:CliArg:jar:0.1.21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ org.jsonex:jcParent:0.1.21, /Users/jiazhen/Documents/junior/CS397/jsonex/pom.xml, line 112, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jsonex:SnapshotTest:jar:0.1.21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ org.jsonex:jcParent:0.1.21, /Users/jiazhen/Documents/junior/CS397/jsonex/pom.xml, line 112, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jsonex:jcParent:pom:0.1.21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 112, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------< org.jsonex:JSONCoder >------------------------
+[INFO] Building JSONCoder 0.1.21
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.4:prepare-agent (default-prepare-agent) @ JSONCoder ---
+[WARNING] The artifact xml-apis:xml-apis:jar:2.0.2 has been relocated to xml-apis:xml-apis:jar:1.0.b2
+[INFO] argLine set to -javaagent:/Users/jiazhen/.m2/repository/org/jacoco/org.jacoco.agent/0.8.4/org.jacoco.agent-0.8.4-runtime.jar=destfile=/Users/jiazhen/Documents/junior/CS397/jsonex/JSONCoder/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ JSONCoder ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/jiazhen/Documents/junior/CS397/jsonex/JSONCoder/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ JSONCoder ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ JSONCoder ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 22 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ JSONCoder ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ JSONCoder ---
+[INFO] Surefire report directory: /Users/jiazhen/Documents/junior/CS397/jsonex/JSONCoder/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jsonex.jsoncoder.JSONCoderTest
+[main] ERROR org.jsonex.snapshottest.Snapshot - Snapshot(org.jsonex.jsoncoder.JSONCoderTest_testBasicEncoding) and actual mismatch. The actual is record in file:
+file:///Users/jiazhen/Documents/junior/CS397/jsonex/JSONCoder/src/test/resources/org/jsonex/jsoncoder/__snapshot__/JSONCoderTest_testBasicEncoding.txt.tmp
+Please review the difference. If the change is expected, please override the snapshot file with the tmp file.
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.761 sec <<< FAILURE!
+testBasicEncoding(org.jsonex.jsoncoder.JSONCoderTest)  Time elapsed: 0.522 sec  <<< FAILURE!
+java.lang.AssertionError: Snapshot(org.jsonex.jsoncoder.JSONCoderTest_testBasicEncoding) and actual mismatch expected:<{
+  "fieldInBaseClass":"Overridden Value",
+  "treeMap":{
+    "key1":"value1"
+  },
+  "linkedList1":[
+    "value1"
+  ],
+  "intField":100,
+  "floatField":1.4,
+  "charField":"A",
+  "booleanField":false,
+  "strField":"String1: '\"",
+  "dateField":"1970-01-01T03:23:32.121Z",
+  "bean2":{
+    "enumField":"value2",
+    "enumField2":12345,
+    "strEnum":"strEnumV1",
+    "enumSet":[
+      "value1",
+      "value2"
+    ],
+    "enumMap":{
+      "value1":"MapValue1"
+    },
+    "testBean":{
+      "$ref":"../../"
+    }
+  },
+  "ints":[
+    4,
+    3,
+    2,
+    1
+  ],
+  "bean2s":[
+    {
+      "strField":"1",
+      "enumSet":[
+        "value1",
+        "value2"
+      ],
+      "enumMap":{}
+    },
+    {
+      "strField":"2",
+      "enumSet":[
+        "value1",
+        "value2"
+      ],
+      "enumMap":{}
+    }
+  ],
+  "readonlyField":"This's a readonly field",
+  "atomicInteger":1001,
+  "bigInteger":"123456789012345678901234567890",
+  "someClass":"java.util.Date",
+  "xmlCalendar":"1970-01-01T00:00:00.000Z",
+  "dateNumberMap":[
+    null
+  ],
+  "publicLinkedList":[
+    "value1"
+  ],
+  "publicTreeMap":{
+    "key1":"value1"
+  },
+  "publicStrField":"PublicString",
+  "publicMap":{
+    "key1":"1970-01-01T00:00:00.000Z",
+    "key2":"1970-01-01T00:20:12.121Z"
+  },
+  "publicBigDecimal1":"123456789012345678901234567",
+  "publicBigDecimal2":"12",
+  "publicInts":[
+    4,
+    3,
+    2,
+    1
+  ],
+  "bean2List":[
+    {
+      "strField":"AAA",
+      "enumSet":[
+        "value1",
+        "value2"
+      ],
+      "enumMap":{}
+    },
+    {
+      "strField":"BBB",
+      "enumSet":[
+        "value1",
+        "value2"
+      ],
+      "enumMap":{}
+    }
+  ],
+  "publicStringSet":[
+    "str1",
+    "str2"
+  ]
+}> but was:<{
+  "fieldInBaseClass":"Overridden Value",
+  "atomicInteger":1001,
+  "bean2":{
+    "enumField":"value2",
+    "enumField2":12345,
+    "enumMap":{
+      "value1":"MapValue1"
+    },
+    "enumSet":[
+      "value1",
+      "value2"
+    ],
+    "strEnum":"strEnumV1",
+    "testBean":{
+      "$ref":"../../"
+    }
+  },
+  "bean2List":[
+    {
+      "enumMap":{},
+      "enumSet":[
+        "value1",
+        "value2"
+      ],
+      "strField":"AAA"
+    },
+    {
+      "enumMap":{},
+      "enumSet":[
+        "value1",
+        "value2"
+      ],
+      "strField":"BBB"
+    }
+  ],
+  "bean2s":[
+    {
+      "enumMap":{},
+      "enumSet":[
+        "value1",
+        "value2"
+      ],
+      "strField":"1"
+    },
+    {
+      "enumMap":{},
+      "enumSet":[
+        "value1",
+        "value2"
+      ],
+      "strField":"2"
+    }
+  ],
+  "bigInteger":"123456789012345678901234567890",
+  "booleanField":false,
+  "charField":"A",
+  "dateField":"1970-01-01T03:23:32.121Z",
+  "dateNumberMap":[
+    null
+  ],
+  "floatField":1.4,
+  "intField":100,
+  "ints":[
+    4,
+    3,
+    2,
+    1
+  ],
+  "linkedList1":[
+    "value1"
+  ],
+  "publicBigDecimal1":"123456789012345678901234567",
+  "publicBigDecimal2":"12",
+  "publicInts":[
+    4,
+    3,
+    2,
+    1
+  ],
+  "publicLinkedList":[
+    "value1"
+  ],
+  "publicMap":{
+    "key1":"1970-01-01T00:00:00.000Z",
+    "key2":"1970-01-01T00:20:12.121Z"
+  },
+  "publicStrField":"PublicString",
+  "publicStringSet":[
+    "str1",
+    "str2"
+  ],
+  "publicTreeMap":{
+    "key1":"value1"
+  },
+  "readonlyField":"This's a readonly field",
+  "someClass":"java.util.Date",
+  "strField":"String1: '\"",
+  "treeMap":{
+    "key1":"value1"
+  },
+  "xmlCalendar":"1970-01-01T00:00:00.000Z"
+}>
+	at org.jsonex.snapshottest.Snapshot.compareOrRecord(Snapshot.java:80)
+	at org.jsonex.snapshottest.Snapshot.assertMatchesSnapshot(Snapshot.java:95)
+	at org.jsonex.snapshottest.Snapshot.assertMatchesSnapshot(Snapshot.java:94)
+	at org.jsonex.jsoncoder.JSONCoderTest.testBasicEncoding(JSONCoderTest.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:61)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:242)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:137)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+
+Results :
+
+Failed tests:   testBasicEncoding(org.jsonex.jsoncoder.JSONCoderTest): Snapshot(org.jsonex.jsoncoder.JSONCoderTest_testBasicEncoding) and actual mismatch expected:<{(..)
+
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.476 s
+[INFO] Finished at: 2022-03-21T00:56:49-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project JSONCoder: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/jiazhen/Documents/junior/CS397/jsonex/JSONCoder/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
