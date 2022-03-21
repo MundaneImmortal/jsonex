@@ -1,0 +1,100 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jsonex:core:jar:0.1.21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ org.jsonex:jcParent:0.1.21, /Users/jiazhen/Documents/junior/CS397/jsonex/pom.xml, line 112, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jsonex:treedoc:jar:0.1.21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ org.jsonex:jcParent:0.1.21, /Users/jiazhen/Documents/junior/CS397/jsonex/pom.xml, line 112, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jsonex:JSONCoder:jar:0.1.21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ org.jsonex:jcParent:0.1.21, /Users/jiazhen/Documents/junior/CS397/jsonex/pom.xml, line 112, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jsonex:csv:jar:0.1.21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ org.jsonex:jcParent:0.1.21, /Users/jiazhen/Documents/junior/CS397/jsonex/pom.xml, line 112, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jsonex:CliArg:jar:0.1.21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ org.jsonex:jcParent:0.1.21, /Users/jiazhen/Documents/junior/CS397/jsonex/pom.xml, line 112, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jsonex:SnapshotTest:jar:0.1.21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ org.jsonex:jcParent:0.1.21, /Users/jiazhen/Documents/junior/CS397/jsonex/pom.xml, line 112, column 15
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.jsonex:jcParent:pom:0.1.21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 112, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] JSONCoder Parent                                                   [pom]
+[INFO] core                                                               [jar]
+[INFO] treedoc                                                            [jar]
+[INFO] JSONCoder                                                          [jar]
+[INFO] 
+[INFO] ------------------------< org.jsonex:jcParent >-------------------------
+[INFO] Building JSONCoder Parent 0.1.21                                   [1/4]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.4:prepare-agent (default-prepare-agent) @ jcParent ---
+[WARNING] The artifact xml-apis:xml-apis:jar:2.0.2 has been relocated to xml-apis:xml-apis:jar:1.0.b2
+[INFO] argLine set to -javaagent:/Users/jiazhen/.m2/repository/org/jacoco/org.jacoco.agent/0.8.4/org.jacoco.agent-0.8.4-runtime.jar=destfile=/Users/jiazhen/Documents/junior/CS397/jsonex/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-source-plugin:3.0.1:jar-no-fork (attach-sources) @ jcParent ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.4:report (jacoco-site) @ jcParent ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ jcParent ---
+[INFO] Installing /Users/jiazhen/Documents/junior/CS397/jsonex/pom.xml to /Users/jiazhen/.m2/repository/org/jsonex/jcParent/0.1.21/jcParent-0.1.21.pom
+[INFO] 
+[INFO] --------------------------< org.jsonex:core >---------------------------
+[INFO] Building core 0.1.21                                               [2/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.4:prepare-agent (default-prepare-agent) @ core ---
+[INFO] argLine set to -javaagent:/Users/jiazhen/.m2/repository/org/jacoco/org.jacoco.agent/0.8.4/org.jacoco.agent-0.8.4-runtime.jar=destfile=/Users/jiazhen/Documents/junior/CS397/jsonex/core/target/jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ core ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/jiazhen/Documents/junior/CS397/jsonex/core/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ core ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 42 source files to /Users/jiazhen/Documents/junior/CS397/jsonex/core/target/classes
+[WARNING] /Users/jiazhen/Documents/junior/CS397/jsonex/core/src/main/java/org/jsonex/core/util/EnumUtil.java: Some input files use unchecked or unsafe operations.
+[WARNING] /Users/jiazhen/Documents/junior/CS397/jsonex/core/src/main/java/org/jsonex/core/util/EnumUtil.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ core ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /Users/jiazhen/Documents/junior/CS397/jsonex/core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ core ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for JSONCoder Parent 0.1.21:
+[INFO] 
+[INFO] JSONCoder Parent ................................... SUCCESS [  2.197 s]
+[INFO] core ............................................... FAILURE [  8.366 s]
+[INFO] treedoc ............................................ SKIPPED
+[INFO] JSONCoder .......................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  10.755 s
+[INFO] Finished at: 2022-03-21T00:52:00-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project core: No tests were executed!  (Set -DfailIfNoTests=false to ignore this error.) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :core
